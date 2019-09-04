@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/monsterButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icons8_cookie_monster_96"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/cookiesTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cookieImageView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="0 Cookies!"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cookieImageView" />
+
+    <ImageView
+        android:id="@+id/cookieImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oxygen480"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/cursorTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Cursor: 0 * 0.1"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <ImageButton
+        android:id="@+id/cursorButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cursorTextView"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_cursor_64" />
+
+    <TextView
+        android:id="@+id/cursorPriceTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cursorButton"
+        android:gravity="center"
+        android:text="Price: "
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/grandmaTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:text="Grandma: 0 * 1"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grandmaButton" />
+
+    <ImageButton
+        android:id="@+id/grandmaButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/grandmaTextView"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icons8_old_woman_50"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <TextView
+        android:id="@+id/grandmaPriceTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/grandmaButton"
+        android:gravity="center"
+        android:text="Price: "
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/farmTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:gravity="center"
+        android:text="Farm: 0 * 8"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/farmButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/farmTextView"
+        app:srcCompat="@drawable/icons8_farm_2_50" />
+
+    <TextView
+        android:id="@+id/farmPriceTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/farmButton"
+        android:gravity="center"
+        android:text="Price: "
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/mineTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="330dp"
+        android:gravity="center"
+        android:text="Mine: 0 * 47"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/mineButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mineTextView"
+        app:srcCompat="@drawable/icons8_mine_cart_50" />
+
+    <TextView
+        android:id="@+id/minePriceTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mineButton"
+        android:gravity="center"
+        android:text="Price: "
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/factoryTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Factory: 0 * 260"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <ImageButton
+        android:id="@+id/factoryButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/cursorTextView"
+        app:srcCompat="@drawable/icons8_manufacturing_50" />
+
+    <TextView
+        android:id="@+id/factoryPriceTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/cursorButton"
+        android:gravity="center"
+        android:text="Price: "
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <TextView
+        android:id="@+id/bankTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/grandmaButton"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Bank: 0 * 1400"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <ImageButton
+        android:id="@+id/bankButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/grandmaTextView"
+        app:srcCompat="@drawable/icons8_museum_50" />
+
+    <TextView
+        android:id="@+id/bankPriceTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/grandmaButton"
+        android:gravity="center"
+        android:text="Price: "
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <TextView
+        android:id="@+id/templeTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/farmButton"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Temple: 0 * 7800"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <ImageButton
+        android:id="@+id/templeButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/farmTextView"
+        app:srcCompat="@drawable/icons8_city_church_50"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/templePriceTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/farmButton"
+        android:gravity="center"
+        android:text="Price: "
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <TextView
+        android:id="@+id/labTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/mineTextView"
+        android:gravity="center"
+        android:text="Lab: 0 * 44000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <ImageButton
+        android:id="@+id/labButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mineTextView"
+        app:srcCompat="@drawable/icons8_test_tube_50" />
+
+    <TextView
+        android:id="@+id/labPriceTextView"
+        android:layout_width="128dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mineButton"
+        android:gravity="center"
+        android:text="Price: "
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/cookieImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cursorButton" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="RESET" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/cookiesPerSecondTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cookiesTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="0.0 / s" />
+
+</RelativeLayout>
